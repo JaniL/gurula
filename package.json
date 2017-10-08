@@ -1,0 +1,24 @@
+{
+  "name": "gurula",
+  "version": "1.0.0",
+  "author": "Jani Luukko <jjluukko@cs.helsinki.fi>",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn build && electron app/dist/main.js",
+    "build": "babel app/src -d app/dist --copy-files"
+  },
+  "main": "app/main.js",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "ical": "^0.5.0",
+    "ramda": "^0.24.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "electron": "^1.7.8"
+  }
+}
